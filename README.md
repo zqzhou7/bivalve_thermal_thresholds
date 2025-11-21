@@ -70,7 +70,7 @@ and exclude 2016 from size-based comparisons.
 # 🗺️ **1. Spatial Distribution of Large Adults**
 
 **Figure placeholder:**  
-`![Abundance map](figures/abundance_bothSpecies_google_6classes.png)`
+`![Abundance map](abundance_bothSpecies_google_6classes.png)`
 
 Large adults cluster in distinct regions of the estuary:
 
@@ -84,7 +84,7 @@ Circle sizes reflect **six abundance classes**, enabling comparison of low to ex
 # 🌄 **2. Adult Habitat Intensity (KDE)**
 
 **Figure placeholder:**  
-`![Habitat intensity](figures/habitat_intensity_bothSpecies_google.png)`
+`![Habitat intensity](habitat_intensity_bothSpecies_google.png)`
 
 Kernel-density fields identify **core adult habitats**, revealing:
 
@@ -98,7 +98,7 @@ These differences suggest contrasting habitat strategies between a long-term res
 # ⏳ **3. Temporal Persistence (2014–2022)**
 
 **Figure placeholder:**  
-`![Temporal persistence](figures/temporal_persistence_bothSpecies_google.png)`
+`![Temporal persistence](temporal_persistence_bothSpecies_google.png)`
 
 Persistence = **number of years** large adults appear at a station (0–9 years).
 
@@ -112,7 +112,7 @@ Patterns:
 # 🔄 **4. Range Centroid Shifts (Abundance-Weighted)**
 
 **Figure placeholder:**  
-`![Centroid shifts](figures/centroid_shift_clean_bothSpecies_globalScale_8classes.png)`
+`![Centroid shifts](centroid_shift_clean_bothSpecies_globalScale_8classes.png)`
 
 Annual **abundance-weighted centroids** illustrate spatial movement:
 
@@ -126,7 +126,7 @@ Circle sizes use a shared **eight-class global scale** (0–25 → >5000 ind./m�
 # 🌡️ **5. Abundance Response to Summer Temperature Extremes**
 
 **Figure placeholder:**  
-`![TempSum regression](figures/twoSps_tempSum.png)`
+`![TempSum regression](twoSps_tempSum.png)`
 
 Following **Zhou et al. (2025)** and **Troost et al. (2021)**, we quantify interannual thermal stress by summing:
 
@@ -169,11 +169,11 @@ source("run_all_bothSpecies.R")
 ```
 
 This script produces:
-	•	abundance_bothSpecies_google_6classes.png
-	•	habitat_intensity_bothSpecies_google.png
-	•	temporal_persistence_bothSpecies_google.png
-	•	centroid_shift_clean_bothSpecies_globalScale_8classes.png
-	•	twoSps_tempSum.png
+- abundance_bothSpecies_google_6classes.png
+- habitat_intensity_bothSpecies_google.png
+- temporal_persistence_bothSpecies_google.png
+- centroid_shift_clean_bothSpecies_globalScale_8classes.png
+- twoSps_tempSum.png
 
 # 📘 **Citation**
 
