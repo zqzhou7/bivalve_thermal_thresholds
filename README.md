@@ -95,7 +95,6 @@ To maintain consistency, we identify **large adults** as:
 
 Large-adult abundance at each station was mapped using a Google satellite basemap.
 
-**Figure placeholder**
 ![Abundance map](abundance_bothSpecies_google_6classes.png)
 
 Large adults cluster in distinct regions of the estuary:
@@ -109,7 +108,6 @@ Circle sizes reflect **six abundance classes**, enabling comparison of low to ex
 
 # 🌄 **2. Adult Habitat Intensity (KDE)**
 
-**Figure placeholder:**  
 ![Habitat intensity](habitat_intensity_bothSpecies_google.png)
 
 Kernel-density fields identify **core adult habitats**, revealing:
@@ -123,7 +121,6 @@ These differences suggest contrasting habitat strategies between a long-term res
 
 # ⏳ **3. Temporal Persistence (2014–2022)**
 
-**Figure placeholder:**  
 ![Temporal persistence](temporal_persistence_bothSpecies_google.png)
 
 Persistence = **number of years** large adults appear at a station (0–9 years).
@@ -137,7 +134,6 @@ Patterns:
 
 # 🔄 **4. Range Centroid Shifts (Abundance-Weighted)**
 
-**Figure placeholder:**  
 ![Centroid shifts](centroid_shift_clean_bothSpecies_globalScale_8classes.png)
 
 Annual centroid positions track directional movement of each species.
@@ -153,7 +149,6 @@ Circle sizes represent an 8-class global abundance scale (0–25 → >5000 ind.�
 
 # 🧪 **5. Mesocosm Experiment (Heatwave × Salinity Stress)**
 
-**Figure placeholder:**
 ![Mesocosm setup](mesocosm_setup.jpeg)
 
 To mechanistically explain field patterns, a controlled mesocosm experiment  
@@ -170,7 +165,6 @@ The system includes:
 
 # ☠️ **6. Survival Differences & the “Establishment Window”**
 
-**Figure placeholder:**
 ![Establishment window](diff_mRateWINDOW_neo1.jpeg)
 
 Using `sr_2sp.csv` and `establish_windowFig5.R`, mortality curves reveal:
@@ -189,7 +183,6 @@ This explains:
 
 # 🌡️ **7. Abundance Response to Summer Temperature Extremes**
 
-**Figure placeholder:**  
 ![TempSum regression](twoSps_tempSum.png)
 
 Following **Zhou et al. (2025)** and **Troost et al. (2021)**, we quantify interannual thermal stress by summing:
