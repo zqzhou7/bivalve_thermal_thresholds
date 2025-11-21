@@ -175,7 +175,7 @@ This script produces:
 	•	centroid_shift_clean_bothSpecies_globalScale_8classes.png
 	•	twoSps_tempSum.png
 
-#📘 **Citation**
+# 📘 **Citation**
 
 If using this workflow, please cite:
 
@@ -186,6 +186,6 @@ DOI: https://doi.org/10.1016/j.gecco.2025.e03918
 
 And acknowledge the long-term monitoring dataset curated by Troost et al. (Rijkswaterstaat / WMR).
 
-#👋 **Contact**
+# 👋 **Contact**
 
 For questions, data access, or collaboration inquiries, please contact the authors of the linked publication.
