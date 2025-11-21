@@ -167,12 +167,13 @@ The system includes:
 
 ![Establishment window](diff_mRateWINDOW_neo1.png)
 
-Mortality patterns were generated using the mesocosm module integrated into `run_all_bothSpecies.R`, based on the dataset `sr_2sp.csv`.
+Mortality patterns were generated using the mesocosm module integrated into `run_all_bothSpecies.R`, 
+based on the dataset `sr_2sp.csv`.
 
 - *R. philippinarum* → higher tolerance to combined heat + low salinity  
 - *C. edule* → sharp mortality collapse under compound extremes  
 
-A **species-specific establishment window** emerges (5–15 PSU; moderate heat stress)  
+A **species-specific establishment window** emerges (5–15 PSU; moderate heat stress), 
 where introduced clams survive but cockles do not.
 
 This explains:
