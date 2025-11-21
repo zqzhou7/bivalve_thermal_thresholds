@@ -84,7 +84,7 @@ Circle sizes reflect **six abundance classes**, enabling comparison of low to ex
 # 🌄 **2. Adult Habitat Intensity (KDE)**
 
 **Figure placeholder:**  
-`![Habitat intensity](habitat_intensity_bothSpecies_google.png)`
+![Habitat intensity](habitat_intensity_bothSpecies_google.png)
 
 Kernel-density fields identify **core adult habitats**, revealing:
 
