@@ -1,75 +1,101 @@
 # Spatial and Thermal-Stress Dynamics of Native and Introduced Bivalves in the Eastern Scheldt
 
-This repository hosts the full analytical workflow used to explore the **spatial distribution**,  
-**adult habitat intensity**, **temporal persistence**, **range centroid shifts**, and  
-**temperature–abundance relationships** of two co-occurring bivalve species in the Eastern Scheldt, NL:
+This repository provides a unified analytical workflow exploring how **native** and **introduced** bivalves respond to long-term environmental variability and compound climate extremes.  
+The pipeline integrates **field surveys**, **spatial distribution mapping**, **persistence analysis**,  
+**centroid movement**, **thermal-stress modeling**, and **mesocosm survival experiments**.
 
-- **Native cockle** (*Cerastoderma edule*)  
+Species analyzed:
+- **Native cockle** (*Cerastoderma edule*)
 - **Introduced Manila clam** (*Ruditapes philippinarum*)
 
-The analyses complement and provide deeper spatial context to the findings published in:
+These analyses support and extend the findings in:
 
 > **Zhou et al. (2025)**  
 > *Compound extreme events reshuffle the stacked odds in the gamble between native and introduced bivalves*  
 > *Global Ecology and Conservation*  
 > DOI: https://doi.org/10.1016/j.gecco.2025.e03918
 
-The full workflow is implemented in:  
+Full pipeline implemented in:
 `run_all_bothSpecies.R`
 
 ---
 
-# 📘 **Background**
+# 📘 Background
 
-Long-term benthic surveys have been conducted annually in the Eastern Scheldt since 1990  
-(Troost et al. dataset, Rijkswaterstaat). Our analyses use the **2014–2021** period where:
+Long-term benthic surveys (Rijkswaterstaat/WMR, curated by Troost et al.)  
+have monitored size, abundance, and distribution of bivalves in the Eastern Scheldt since 1990.  
+This project focuses on **2014–2021**, when:
 
-- *Ruditapes philippinarum* (introduced) is present consistently (introduced prior to 2014).  
-- Weather and temperature data from KNMI enable linking summer thermal extremes to next-year abundance.  
-- 111 survey stations were selected where **adult individuals of both species co-occurred**,  
-  reducing habitat-driven bias and providing a neutral baseline following **neutral theory**.
+- *R. philippinarum* is fully established throughout the system,  
+- KNMI temperature data allow quantification of extreme heat loads,  
+- A subset of **111 monitoring stations** contains adult individuals of **both species**,  
+  providing a neutral, habitat-controlled basis for comparison.
+
+This dataset complements mesocosm experiments and climate analyses,  
+allowing linking **observed patterns** with **mechanistic drivers**.
 
 ---
 
-# 🐚 **Why Large Adults? Size & Age Class Logic**
+# 🐚 Why Focus on Large Adults?
 
-To align with ecological inference and your mesocosm experiment, only **adult size classes** are analyzed.
+Juveniles and larvae are **highly stochastic** due to:
 
-### **Cerastoderma edule (cockle) — age classes**
-Cockles grow annual rings; age is winter-defined:
+- hydrodynamic advection and tidal transport,  
+- storm-driven dispersal,  
+- unpredictable settlement pulses,  
+- and strong environmental filtering at early life stages.
+
+Thus, spatial patterns in small size classes **do not reliably reflect habitat quality**.
+
+By contrast, **large adults**:
+
+- survive ≥ 1–2 winters,  
+- integrate multiple seasons of environmental filtering,  
+- provide stable spatial signals,  
+- and reflect long-term habitat suitability.
+
+Hence, analyses focus on **established adult size/age classes**, which are ecologically interpretable.
+
+---
+
+# Cockle (*Cerastoderma edule*) — Age Classes
 
 | Class | Meaning |
 |-------|---------|
-| **1j** | one-year-old (juveniles) |
-| **2j** | two-year-old |
-| **mj** | more-than-two years old (mature adults) |
-| **nb** | age not determined |
-| *(0j rarely present; only 6 observations → merged into 1j)* |
+| **1j** | 1-year-old juvenile |
+| **2j** | 2-year-old |
+| **mj** | >2-year adult |
+| **nb** | age undetermined |
+| *(0j recruits are very rare: n=6 → merged into 1j)* |
 
-We use **2j + mj** as "**large adults**" — individuals that survived ≥2 winters.
+**Large adults = 2j + mj**
 
 ---
 
-### **Ruditapes philippinarum (Manila clam) — size classes**
-Clams were measured by shell length, but thresholds changed through time:
+# Manila clam (*Ruditapes philippinarum*) — Size Classes
+
+Clams are classified by shell length, but thresholds changed through time:
 
 | Years | Small (“kln”) | Large (“grt”) |
 |-------|----------------|----------------|
-| **2014–2017** | <1.5 cm | >1.5 cm |
-| **2018–2021** | <2.0 cm | >2.0 cm |
+| 2014–2017 | <1.5 cm | >1.5 cm |
+| 2018–2021 | <2.0 cm | >2.0 cm |
 
-Size classes were inconsistently recorded:
-- **2016**: no size classes recorded  
-- **2014, 2017, 2019**: size classes partially recorded  
+Additional complications:
+- **2016:** no size classes recorded  
+- **2014, 2017, 2019:** partial size-class labelling  
 
-We use **“grt”** as the **large-adult class** across all years  
-and exclude 2016 from size-based comparisons.
+To maintain consistency, we identify **large adults** as:
+**"grt"** across all years  
+(2016 excluded for size-based inference).
 
 ---
 
-# 🗺️ **1. Spatial Distribution of Large Adults**
+# 🗺️ 1. Spatial Distribution of Large Adults
 
-**Figure placeholder:**  
+Large-adult abundance at each station was mapped using a Google satellite basemap.
+
+**Figure placeholder**
 ![Abundance map](abundance_bothSpecies_google_6classes.png)
 
 Large adults cluster in distinct regions of the estuary:
@@ -114,16 +140,54 @@ Patterns:
 **Figure placeholder:**  
 ![Centroid shifts](centroid_shift_clean_bothSpecies_globalScale_8classes.png)
 
-Annual **abundance-weighted centroids** illustrate spatial movement:
+Annual centroid positions track directional movement of each species.
 
-- **Native cockle:** oscillating centroid pattern, suggesting stable habitat use with year-to-year fluctuations.  
-- **Manila clam:** a **clear southeastward drift**, consistent with expansion or thermal-niche tracking.  
+Findings:
 
-Circle sizes use a shared **eight-class global scale** (0–25 → >5000 ind./m²/year).
+- Cockles: oscillatory centroid → stable distribution with interannual variation  
+- Manila clams: **consistent southeastward drift** → expansion or thermal tracking  
+
+Circle sizes represent an 8-class global abundance scale (0–25 → >5000 ind.·m⁻²·yr⁻¹).
 
 ---
 
-# 🌡️ **5. Abundance Response to Summer Temperature Extremes**
+# 🧪 **5. Mesocosm Experiment (Heatwave × Salinity Stress)**
+
+**Figure placeholder:**
+![Mesocosm setup](mesocosm_setup.jpeg)
+
+To mechanistically explain field patterns, a controlled mesocosm experiment  
+simulated compound extreme events: **multi-day heatwaves × low salinity**.
+
+The system includes:
+
+- recirculating seawater,  
+- thermal control (20→40°C blocks),  
+- fine/coarse sediment mosaic,  
+- diel cycling mimicking environmental rhythms.
+
+---
+
+# ☠️ **6. Survival Differences & the “Establishment Window”**
+
+**Figure placeholder:**
+![Establishment window](diff_mRateWINDOW_neo1.jpeg)
+
+Using `sr_2sp.csv` and `establish_windowFig5.R`, mortality curves reveal:
+
+- *R. philippinarum* → higher tolerance to combined heat + low salinity  
+- *C. edule* → sharp mortality collapse under compound extremes  
+
+A **species-specific establishment window** emerges (5–15 PSU; moderate heat stress)  
+where introduced clams survive but cockles do not.
+
+This explains:
+
+- clam encroachment into stressful fringe habitats,  
+- asymmetric resilience under heat extremes,  
+- climate-driven invasion opportunities.
+
+# 🌡️ **7. Abundance Response to Summer Temperature Extremes**
 
 **Figure placeholder:**  
 ![TempSum regression](twoSps_tempSum.png)
