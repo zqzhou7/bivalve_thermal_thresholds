@@ -262,6 +262,8 @@ DOI: https://doi.org/10.1016/j.gecco.2025.e03918
 
 For full legal terms, see [LICENSE.md](LICENSE.md).
 
+---
+
 # 👋 **Contact**
 
 For questions, data access, or collaboration inquiries, please contact the authors of the linked publication.
