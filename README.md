@@ -167,7 +167,7 @@ The system includes:
 
 ![Establishment window](diff_mRateWINDOW_neo1.png)
 
-Using `sr_2sp.csv` and `establish_window.R`, mortality curves reveal:
+Using `sr_2sp.csv`, mortality curves reveal:
 
 - *R. philippinarum* → higher tolerance to combined heat + low salinity  
 - *C. edule* → sharp mortality collapse under compound extremes  
