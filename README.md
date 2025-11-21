@@ -149,7 +149,7 @@ Circle sizes represent an 8-class global abundance scale (0–25 → >5000 ind.�
 
 # 🧪 **5. Mesocosm Experiment (Heatwave × Salinity Stress)**
 
-![Mesocosm setup](mesocosm_setup.jpeg)
+![Mesocosm setup](mesocosm_setup.png)
 
 To mechanistically explain field patterns, a controlled mesocosm experiment  
 simulated compound extreme events: **multi-day heatwaves × low salinity**.
@@ -165,7 +165,7 @@ The system includes:
 
 # ☠️ **6. Survival Differences & the “Establishment Window”**
 
-![Establishment window](diff_mRateWINDOW_neo1.jpeg)
+![Establishment window](diff_mRateWINDOW_neo1.png)
 
 Using `sr_2sp.csv` and `establish_window.R`, mortality curves reveal:
 
