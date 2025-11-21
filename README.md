@@ -167,7 +167,7 @@ The system includes:
 
 ![Establishment window](diff_mRateWINDOW_neo1.png)
 
-Using `sr_2sp.csv`, mortality curves reveal:
+Mortality patterns were generated using the mesocosm module integrated into `run_all_bothSpecies.R`, based on the dataset `sr_2sp.csv`.
 
 - *R. philippinarum* → higher tolerance to combined heat + low salinity  
 - *C. edule* → sharp mortality collapse under compound extremes  
@@ -231,6 +231,7 @@ This script produces:
 - temporal_persistence_bothSpecies_google.png
 - centroid_shift_clean_bothSpecies_globalScale_8classes.png
 - twoSps_tempSum.png
+- diff_mRateWINDOW_neo1.png
 
 # 📘 **Citation**
 
