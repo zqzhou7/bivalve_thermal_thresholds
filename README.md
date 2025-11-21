@@ -243,6 +243,25 @@ DOI: https://doi.org/10.1016/j.gecco.2025.e03918
 
 And acknowledge the long-term monitoring dataset curated by Troost et al. (Rijkswaterstaat / WMR).
 
+---
+
+# 📜 **Usage, Permissions, and Redistribution**
+
+The scripts, analyses, figures, and derived conceptual models in this repository are intended **solely for academic and non-commercial research**.
+
+- **Commercial use**, including incorporation into proprietary tools, platforms, or consulting products, **requires explicit written permission** from the authors.
+- **Public reposting or redistribution** of figures, scripts, or processed data (e.g., on websites, media articles, reports, or presentations outside academic contexts) likewise **requires prior approval**.
+- The original long-term monitoring dataset is curated by **Rijkswaterstaat / WMR (Troost et al.)** and may be subject to additional usage restrictions.
+
+For permissions or inquiries, please contact the corresponding author listed in the associated publication:
+
+**Zhou et al. (2025)** –  
+*Compound extreme events reshuffle the stacked odds in the gamble between native and introduced bivalves.*  
+*Global Ecology and Conservation*  
+DOI: https://doi.org/10.1016/j.gecco.2025.e03918
+
+For full legal terms, see [LICENSE.md](LICENSE.md).
+
 # 👋 **Contact**
 
 For questions, data access, or collaboration inquiries, please contact the authors of the linked publication.
